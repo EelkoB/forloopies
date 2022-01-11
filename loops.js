@@ -41,7 +41,7 @@ for (let i = 0; i < 5; i++) {
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
-for (i = 0; i < 16; i++) {
+for (let i = 0; i < 16; i++) {
     if (i % 2 === 0) {
         console.log(i + " is even");
     }
@@ -49,7 +49,6 @@ for (i = 0; i < 16; i++) {
         console.log(i + " is oneven");
     }
 }
-
 
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -66,4 +65,15 @@ for (i = 0; i < 16; i++) {
 // >> 8
 // >> 9
 // ==========================================
-
+for (let i = 0; i < 10; i++) {
+    if (i < 3) {
+        console.log(i);
+    }
+    else if (i >= 6 && i < 10)
+    {
+        console.log(">>" + i);
+    }
+    else {
+        console.log(">" + i);
+    }
+}
