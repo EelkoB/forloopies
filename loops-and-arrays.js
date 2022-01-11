@@ -7,8 +7,8 @@
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
 for (let i = 0; i < names.length; i++) {
-  const littleName = (names[i] + 'je');
-    console.log(littleName);
+ const littleName = (names[i] + 'je');
+        console.log(littleName);
 }
 
 
@@ -19,33 +19,28 @@ for (let i = 0; i < names.length; i++) {
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
 
-
-
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const numbers = [2, 4, 5, 29, 38];
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-        const multiPly = (numbers[i] * 2);
-        console.log(multiPly);
+    const numbers = [2, 4, 5, 29, 38];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            const multiPly = (numbers[i] * 2);
+            console.log(multiPly);
+        } else {
+            const multiThree = (numbers[i] * 3);
+            console.log(multiThree);
+        }
     }
-    else {
-        const multiThree = (numbers[i] * 3);
-        console.log(multiThree);
-    }
-}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
-
-
 
 
 // ==========================================
@@ -56,8 +51,12 @@ for (let i = 0; i < numbers.length; i++) {
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
-for (let i = 0; i < squares.length;)
+    const squares = [30, 2, 8, 24, 11];
+    for (let i = 0; i < squares.length; i++) {
+        const volUme = (squares[i] ** 3);
+        console.log("Het volume van " + squares[i] + " is " + volUme);
+
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
