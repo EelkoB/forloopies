@@ -5,11 +5,15 @@
 // ==========================================
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
-
 for (let i = 0; i < names.length; i++) {
- const littleName = (names[i] + 'je');
-        console.log(littleName);
+       names[i] = names[i] + 'je';
 }
+console.log(names);
+
+//for (let i = 0; i < names.length; i++) {
+// const littleName = (names[i] + 'je');
+//        console.log(littleName);
+//}
 
 
 // Verwachtte uitkomsten:
@@ -24,17 +28,27 @@ for (let i = 0; i < names.length; i++) {
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
-    const numbers = [2, 4, 5, 29, 38];
+const numbers = [2, 4, 5, 29, 38];
     for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0) {
-            const multiPly = (numbers[i] * 2);
-            console.log(multiPly);
+       if (numbers[i] % 2 === 0) {
+            numbers[i] = numbers[i] * 2;
         } else {
-            const multiThree = (numbers[i] * 3);
-            console.log(multiThree);
+           numbers[i] = numbers[i] * 3;
         }
-    }
+   }
+
+    console.log(numbers);
+
+//    const numbers = [2, 4, 5, 29, 38];
+//    for (let i = 0; i < numbers.length; i++) {
+//        if (numbers[i] % 2 === 0) {
+//            const multiPly = (numbers[i] * 2);
+//            console.log(multiPly);
+//        } else {
+//            const multiThree = (numbers[i] * 3);
+//            console.log(multiThree);
+//        }
+//    }
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
