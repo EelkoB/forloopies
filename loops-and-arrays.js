@@ -65,15 +65,21 @@ const numbers = [2, 4, 5, 29, 38];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-    const squares = [30, 2, 8, 24, 11];
-    for (let i = 0; i < squares.length; i++) {
-        const volUme = (squares[i] ** 3);
-        console.log("Het volume van " + squares[i] + " is " + volUme);
-
+const squares = [30, 2, 8, 24, 11];
+for (let i = 0; i < squares.length; i++) {
+    squares[i] = "Het volume van " + squares[i] + " is " + squares[i] ** 3;
 }
+console.log(squares);
+
+//const squares = [30, 2, 8, 24, 11];
+//   for (let i = 0; i < squares.length; i++) {
+//        const volUme = (squares[i] ** 3);
+//        console.log("Het volume van " + squares[i] + " is " + volUme);
+//
+//}
 
 // Verwachtte uitkomsten:
-// Vóór het script zie je de originele waardes:
+
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [
